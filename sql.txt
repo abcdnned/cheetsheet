@@ -1,0 +1,29 @@
+#alter table add
+    ALTER TABLE table_name
+    ADD column_name datatype;
+
+#alter table drop
+    ALTER TABLE table_name
+    DROP COLUMN column_name;
+
+#alter table modify update change datatype
+    ALTER TABLE table_name
+    ALTER COLUMN column_name datatype; //sql server, access
+    MODIFY COLUMN column_name datatype; //my sql, oracle < 10g
+    MODIFY column_name datatype; // oracle > 10g
+
+#between
+    SELECT column_name(s)
+    FROM table_name
+    WHERE column_name BETWEEN value1 AND value2;
+
+#self join product
+    select * from table a, table b // result is two table product
+
+#union
+    //select distinct value, at same column number
+    select status from ptask_entity a union select koni_id from ptask_entity b
+
+#union all
+    //select all value, at same column number
+    select status from ptask_entity a union all select koni_id from ptask_entity b
